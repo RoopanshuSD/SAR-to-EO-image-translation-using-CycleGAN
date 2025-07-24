@@ -182,9 +182,9 @@ PatchGAN-style CNN for fine-grained spatial discrimination.
 
 | Configuration         | PSNR (avg) | SSIM (avg) |
 |-----------------------|------------|-------------|
-| SAR → EO (RGB)        | ~19 dB     | ~0.90        |
-| SAR → EO (RGB+NIR)    | ~18.5 dB   | ~0.89        |
-| SAR → EO (NIR-SWIR-RE)| ~18.2 dB   | ~0.88        |
+| SAR → EO (RGB)        | ~19 dB     | ~0.6        |
+| SAR → EO (RGB+NIR)    | ~16.7 dB   | ~0.45        |
+| SAR → EO (NIR-SWIR-RE)| ~18 dB   | ~0.6        |
 
 ---
 
