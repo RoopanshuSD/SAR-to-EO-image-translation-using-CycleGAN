@@ -34,10 +34,10 @@ Our model integrates **attention mechanisms (CBAM)** and **lightweight MobileNet
 
 ---
 
-## ▶ Instructions to Run Code
+##  Instructions to Run Code
 
 1. **Clone or Upload to Kaggle**
-   - Upload all `.py` and `.ipynb` files along with this `README.md`.
+   - Upload `.ipynb` files along with this `README.md`.
 
 2. **Prepare Dataset**
    - Format: `/train/SAR`, `/train/EO`, `/val/SAR`, etc.
@@ -60,11 +60,11 @@ Our model integrates **attention mechanisms (CBAM)** and **lightweight MobileNet
 
 ---
 
-## 🧹 Data Preprocessing Steps
+##  Data Preprocessing Steps
 
 We designed a robust and modular preprocessing pipeline tailored for paired **SAR-to-EO** image translation. The key component is our custom `SARToEODataset` class.
 
-### 🔄 Dataset Class: `SARToEODataset`
+###  Dataset Class: `SARToEODataset`
 
 This custom PyTorch `Dataset` handles all preprocessing operations:
 
@@ -127,7 +127,7 @@ Our model architecture is carefully designed for lightweight yet high-quality SA
 
 The generator is a **lightweight encoder-decoder** architecture enhanced with **attention mechanisms** for better spatial understanding and spectral reconstruction.
 
-####  Key Architectural Components:
+#### 🔧 Key Architectural Components:
 
 1. **Initial Convolution**
    - Projects the 3-channel SAR input (VV, VH, VV/VH) to 32 feature maps.
@@ -156,9 +156,11 @@ The generator is a **lightweight encoder-decoder** architecture enhanced with **
 
 ---
 
-###  Discriminator follows the **PatchGAN** design, which judges the realism of **patches** instead of entire images—allowing it to enforce high-frequency correctness.
+###  Discriminator
 
-####  Architecture:
+The discriminator follows the **PatchGAN** design, which judges the realism of **patches** instead of entire images—allowing it to enforce high-frequency correctness.
+
+####  Architecture
 
 1. **Layered CNN Blocks**
    - Each block:
