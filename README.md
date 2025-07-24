@@ -8,7 +8,6 @@
   riddhimabhargava_se24b03_011@dtu.ac.in  
 
 ---
-
 ## Project Overview
 
 This project focuses on **translating SAR (Synthetic Aperture Radar) images into Electro-Optical (EO)** images using a **custom-built lightweight CycleGAN architecture**. The objective is to generate realistic EO outputs from radar inputs, especially in remote sensing scenarios where EO data is unavailable due to clouds or low-light conditions.
@@ -168,6 +167,21 @@ PatchGAN-style CNN for fine-grained spatial discrimination.
 - 4×4 convolution blocks with LeakyReLU and optional BatchNorm
 - **Spectral normalization** for GAN stability
 - Outputs a patch-wise prediction map
+
+
+---
+
+### Note:
+We have uploaded the generated EO images for all three parts of the project.
+
+Each image grid consists of the following (from left to right):
+
+1. **VV channel SAR image**
+2. **VH channel SAR image**
+3. **Generated EO image** (from the model)
+4. **Real EO image** (ground truth)
+
+This layout helps visualize the input SAR channels, the model's output, and the actual EO reference for qualitative comparison.
 
 ---
 
