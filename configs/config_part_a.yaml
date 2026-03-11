@@ -1,0 +1,29 @@
+# =============================================================================
+# config_part_a.yaml — SAR → EO (RGB): B4, B3, B2
+# =============================================================================
+
+# Band configuration
+band_config:  rgb
+out_channels: 3
+
+# Dataset
+data_root:      /kaggle/input/sar-eo-cyclegan/CycleGAN_dataset
+train_samples:  2000
+val_samples:    400
+test_samples:   400
+batch_size:     8
+
+# Training
+num_epochs: 10
+lr:         0.0002   # 2e-4
+patience:   7        # early stopping patience (epochs)
+
+# Loss weights
+lambda_gan:    1.0
+lambda_l1:    50.0
+lambda_msssim: 0.5
+lambda_perc:   0.05
+
+# Output paths
+checkpoint_dir: ./checkpoints
+output_dir:     ./outputs
